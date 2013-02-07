@@ -3,7 +3,7 @@
 namespace Gilles\Bundle\HackSessionBundle\Listener;
 
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
-use Symfony\Component\HttpFoundation\Session;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 class AuthenticationHackListener
 {
