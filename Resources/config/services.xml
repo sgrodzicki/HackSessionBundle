@@ -12,7 +12,6 @@
 	    <service id="gilles.authentication.hack_listener" class="%gilles.authentication.hack_listener.class%">
 	        <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" priority="1024" />
 	        <argument type="service" id="session" />
-	        <argument>%login_check_path%</argument>
 	    </service>
     </services>
     
