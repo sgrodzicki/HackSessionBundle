@@ -9,18 +9,15 @@ class AuthenticationHackListener
 {
     protected $session;
     
-    protected $formLoginCheckPath;
-    
-    public function __construct(Session $session, $formLoginCheckPath)
+    public function __construct(Session $session)
     {
         $this->session = $session;
-        $this->formLoginCheckPath = $formLoginCheckPath;
     }
     
     public function onKernelRequest(GetResponseEvent $event)
     {
         $request = $event->getRequest();
-        if (rawurldecode($request->getPathInfo()) === $this->formLoginCheckPath && !$request->hasPreviousSession()) {
+        if (!$request->hasPreviousSession()) {
             $request->cookies->set(session_name(), 'tmp');
             $request->setSession($this->session);
         }
