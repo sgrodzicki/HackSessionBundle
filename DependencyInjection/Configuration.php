@@ -18,11 +18,6 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('gilles_hack_session');
-
-        $rootNode->children()
-            ->scalarNode('login_check_path')->cannotBeEmpty()->end()
-        ->end();
 
         return $treeBuilder;
     }
