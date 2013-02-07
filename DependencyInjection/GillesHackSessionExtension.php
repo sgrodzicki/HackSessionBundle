@@ -24,7 +24,5 @@ class GillesHackSessionExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
-        
-        $container->setParameter('login_check_path', $config['login_check_path']);
     }
 }
