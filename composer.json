@@ -1,5 +1,5 @@
 {
-    "name": "gillest/hack-session-bundle",
+    "name": "sgrodzicki/hack-session-bundle",
     "description": "Hack to allow having the session allowed starting when login_check",
     "keywords": ["Symfony", "session"]
 }
