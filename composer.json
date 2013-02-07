@@ -1,5 +1,8 @@
 {
     "name": "sgrodzicki/hack-session-bundle",
     "description": "Hack to allow having the session allowed starting when login_check",
-    "keywords": ["Symfony", "session"]
+    "keywords": ["Symfony", "session"],
+    "autoload": {
+        "psr-0": { "Gilles\\Bundle\\HackSessionBundle": "" }
+    }
 }
